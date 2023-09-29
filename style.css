@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background: #2f57ad;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: #24005f;
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0px;
+    outline: 0px;
+    background: #ebfffc;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search button img {
+    width: 20px;
+}
+
+/* toggle btn styles */
+.unit-toggle {
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"],
+label {
+    cursor: pointer;
+}
+
+input[type="radio"],
+label:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #007bff;
+}
+
+
+/* weather display styles */
+#weather-icon {
+    width: 120px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* details styles */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 80px;
+}
+
+.col {
+    /* width: 100px; */
+    height: 5%;
+    background-color: #ffffff77;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+}
+
+.weather {
+    display: none;
+}
+
+/* error msg styles */
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .search {
+        max-width: 550px;
+        align-items: flex-start;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
